@@ -2,8 +2,8 @@ namespace Movies;
 
 public class Movie 
 {
-    public string Title;
-    public string Category;
+    public string Title { get; set; }
+    public string Category { get; set; }
 
     public Movie(string Title, string Category)
     {
