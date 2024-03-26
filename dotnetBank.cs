@@ -1,22 +1,9 @@
-﻿namespace dotnetBank;
-
-public class dotnetBank 
+﻿class Client 
 {
-    public bool logged;
-    public int loggedUser;
-    public int[,] Bank;
+    string Name { get; set; }
 
-    private int maxAccounts = 50;
-    public int registredAccounts;
-    public dotnetBank()
+    public Client(string name)
     {
-        Bank = new int[maxAccounts, 4];
-        loggedUser = -99;
-        logged = false;
-        registredAccounts = 0;
-    }
-    public void RegisterAccount(int number, int agency, int pass)
-    {
-
+        Name = name;
     }
 }
